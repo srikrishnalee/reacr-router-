@@ -1,4 +1,5 @@
-import { BrowserRouter, Route , Switch } from "react-router-dom"
+import { BrowserRouter, Route,Routes} from "react-router-dom"
+
 
 
 import About from "./components/About";
@@ -10,12 +11,12 @@ import NotFound from "./components/NotFound";
 const App = () =>(
    <BrowserRouter>
      <Header />
-     <Switch>
-       <Route exact path="/" component={Home} />
-       <Route exact path="/about" component={About} />
-       <Route exact path="/contact" component={Contact} />
+     <Routes>
+       <Route  path="/" element={<Home/>} />
+       <Route  path="/about" element={<About/>} />
+       <Route  path="/contact" element={<Contact/>} />
        <Route component={NotFound} />
-     </Switch>
+     </Routes>
    </BrowserRouter>
    
 )
