@@ -1,12 +1,8 @@
-.nav-header {
-    height: 25vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+ .nav-header { 
     background: url('https://assets.ccbp.in/frontend/react-js/books-blog-bg.png');
   }
-  .nav-menu {
+
+  /* .nav-menu {
     list-style-type: none;
     display: flex;
     margin-left: -40px;
@@ -50,6 +46,10 @@
       font-family: 'Roboto';
       color: white;
       font-size: 34px;
-    }
-  }
+    } */
+  /* } */ 
   
+
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;

@@ -1,21 +1,23 @@
 import { BrowserRouter, Route,Routes} from "react-router-dom"
 
-
-
+import BlogItemDetails from "./components/BlogItemDetails";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Header from "./components/Header";
-import Home from "./components/Home";
-import NotFound from "./components/NotFound";
+
+import BlogList from "./components/BlogsList"
+
 
 const App = () =>(
    <BrowserRouter>
      <Header />
      <Routes>
-       <Route  path="/" element={<Home/>} />
+       
+       <Route  path="/" element={<BlogList/>} />
        <Route  path="/about" element={<About/>} />
        <Route  path="/contact" element={<Contact/>} />
-       <Route component={NotFound} />
+       <Route path="/blogs/:id" element = {<BlogItemDetails/>} />
+
      </Routes>
    </BrowserRouter>
    
